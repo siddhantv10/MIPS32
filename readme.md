@@ -69,45 +69,45 @@ R- type, I-type and Jump-type (not included)
 	|OPCODE| SOURCE Register 1| SOURCE Register 2| Destination Register | <empty>|                         
 	
 	                                                                                   
-	|ADD|	000000|  
-	|SUB	|000001|
-	|AND	|000010| 
-	|OR	|000011|
-	|SLT	|000100|
-	|MUL	|000101|
-	|HLT|	111111|
+	|ADD |000000|  
+	|SUB |000001|
+	|AND |000010| 
+	|OR |000011|
+	|SLT |000100|
+	|MUL |000101|
+	|HLT| 111111|
   
 --> SUB R5, R12, R25
 		
-		|000001|	01100|	11001|	00101|	00000000000|
-		|SUB	|R12	|R25	|R5	|<empty>|
+|000001|01100|11001|00101|00000000000|
+|SUB|R12|R25|R5|<empty>|
 		
 --> 05992800 in hexadecimal
 		
 	
 2. I-type
 	
-		|31-26|	25-21| 20-16| 15-0|
-		|OPCODE| Source Register–1| Destination Register| 16 bit immediate Data|
+	|31-26|	25-21| 20-16| 15-0|
+	|OPCODE| Source Register–1| Destination Register| 16 bit immediate Data|
 		
-|LW	|001000|
-|SW	|001001|
-|ADDI	|001010|
-|SUBI	|001011|
-|SLTI	|001100|
+|LW|001000|
+|SW|001001|
+|ADDI|001010|
+|SUBI|001011|
+|SLTI|001100|
 |BNEQZ|	001101|
 |BEQZ|	001110|
 
 --> LW R20, 84(R9)
 	
-		|001000	|01001	|10100	|0000000001010100|
-		|LW	|R9	|R20	|Offset|
+|001000	|01001	|10100	|0000000001010100|
+|LW	|R9	|R20	|Offset|
 		
 -->21340054 in hexadecimal
 		
 --> BEQZ R25, Label
-		|001110|	11001|	00000|	YYYYYYYYYYYYYYYY|
-		|BEQZ	|R25|Unused	|Offset|
+		|001110|11001|00000|YYYYYYYYYYYYYYYY|
+		|BEQZ|R25|Unused|Offset|
 		
 --> HERE Offset = Number of Instructions we Need to go back +1
 		
