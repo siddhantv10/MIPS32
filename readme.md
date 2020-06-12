@@ -69,7 +69,8 @@ R- type, I-type and Jump-type (not included)
 	|OPCODE| SOURCE Register 1| SOURCE Register 2| Destination Register | <empty>|                         
 	
 	
-	
+	| Instruction | Code|
+	| --- |---|
 	| ADD | 000000 |  
 	| SUB | 000001 |
 	| AND | 000010 | 
