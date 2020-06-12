@@ -68,14 +68,15 @@ R- type, I-type and Jump-type (not included)
 	| --- | --- | --- | --- | --- |
 	|OPCODE| SOURCE Register 1| SOURCE Register 2| Destination Register | <empty>|                         
 	
-	                                                                                   
-	|ADD | 000000 |  
-	|SUB | 000001 |
-	|AND | 000010 | 
-	|OR | 000011 |
-	|SLT | 000100 |
-	|MUL | 000101 |
-	|HLT| 111111 |
+	
+	
+	| ADD | 000000 |  
+	| SUB | 000001 |
+	| AND | 000010 | 
+	| OR | 000011 |
+	| SLT | 000100 |
+	| MUL | 000101 |
+	| HLT | 111111 |
   
 --> SUB R5, R12, R25
 		
