@@ -9,7 +9,7 @@ Verilog, 5 stage pipelined design for a simple 32-bit Reduced Instruction Set Ch
 
 32 Registers of 32 bit each. Register 0 is always read as zero and loads to it have no effect.
 
-# List of Instructions (ONLY A SUBSET OF ACTUAL MIPS32 Instruction set have been executed)
+# List of Instructions (Only a subset of the actual MIPS32 Instruction set have been executed)
 
 Load and Store Instructions:
 
@@ -63,6 +63,7 @@ R- type, I-type and Jump-type (not included)
 
 
 1. R-type
+
 		
 	|31-26 | 25-21 |20-16 |	15-11 |	11-0|
 	| --- | --- | --- | --- | --- |
@@ -87,6 +88,7 @@ R- type, I-type and Jump-type (not included)
 		
 which is 05992800 in hexadecimal
 		
+	
 	
 2. I-type
 	
@@ -120,4 +122,33 @@ which is 21340054 in hexadecimal
 		
 --> HERE Offset = Number of Instructions we Need to go back +1
 		
+# INSTRUCTION CYCLE
+
+We divide the instrcution cycle into 5 steps:
+	 
+   1. IF: Instruction Fetch
+   2. ID: Instruction Decode
+   3. EX: Execution/ Effective Address Calculation
+   4. MEM: Memory Access
+   5. WB: Register Write Back
+	    
+	 
+1. IF
+        Here the instruction pointed to by the PC is fetched from the memory and also the next value of PC is computed.
+	For the branch instruction, the new value of PC may be the target address. So PC is not updated in this stage; the new value is stored in a register NPC.
+	       
+2. ID
+	        The instruction already fetched in IF is decoded. 
+	        Decoding is done in parallel with reading the register operands rs and rt, the two source registers.
+	        Similarly, the immediate data are sign extended. 
+	 
+3. EX 
+	        ALU is used to perform some calculation. ALU operates on the operands that have already been made ready in the 	last step.
+	 
+4. MEM
+	        The only instructions that make use of this step are LOAD , STORE, and BRANCH.
+	        LOAD and STORE access the memory. BRANCH updates the PC depending upon the outcome of the branch condition.
+	    
+5. WB
+	        The Result is written back in the register file. The result may come from ALU or memory System by load system. 
 
