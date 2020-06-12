@@ -148,12 +148,16 @@ We divide the instrcution cycle into 5 steps:
 
 To add 10, 20 and 25 and store it in a register
 
-	1.  ADDI R1, R0, 10;     //Store 10 in R1
-	2.  ADDI R2, R0, 20;    //Store 20 in R2
-	3.  ADDI R3, R0, 25;     //Store 25 in R3
+	1. ADDI R1, R0, 10;     //Store 10 in R1
+	2. ADDI R2, R0, 20;    //Store 20 in R2
+	3. ADDI R3, R0, 25;     //Store 25 in R3
 	4. OR R7, R7, R7        --dummy instructions to avoid hazards
 	5. OR R7, R7, R7        --dummy 
 	6. ADD R4, R1, R2     //Add R1 and R2 and store in R4
 	7. OR R7, R7, R7         --dummy
 	8. ADD R5, R4, R3     // Add R4 and R3 and store in R5
 	9. HLT
+	
+# OUTPUT WAVEFORM:
+
+![waveform](test1.png)
