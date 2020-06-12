@@ -161,3 +161,21 @@ To add 10, 20 and 25 and store it in a register
 # OUTPUT WAVEFORM:
 
 ![waveform](test1.png)
+
+# SAMPLE PROGRAM 2
+
+To load the contents from a given memory address, add 45 to it and store it in the next memory location.
+	
+	1. ADDI  R1, R0, 120    //Store 120 in R1
+	2. OR R3, R3, R3          //Dummy
+	3. LW R2, 0(R1)           //Load R2 with Mem[R1]
+	4. OR R3, R3, R3         //Dummy
+	5. ADDI R2, R2, 45     //Add 45 to R2
+	6. OR R3, R3, R3        //Dummy
+	7. SW R2, 1(R1)         //Store the result of R2 in Mem[R1+1]
+	8. HLT
+
+
+# OUTPUT WAVEFORM:
+
+![wave2](test2.png)
