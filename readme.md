@@ -64,9 +64,9 @@ R- type, I-type and Jump-type (not included)
 
 1. R-type
 		
-		|31-26 |	25-21 |	20-16 |	15-11 |	11-0|
-		| --- |  --- | --- | --- | --- |
-		|OPCODE|	SOURCE Register 1|	SOURCE Register 2|	Destination Register|<empty>|                         
+	|31-26 | 25-21 |20-16 |	15-11 |	11-0|
+	| --- | --- | --- | --- | --- |
+	|OPCODE| SOURCE Register 1| SOURCE Register 2| Destination Register | <empty>|                         
 	
 	                                                                                   
 	|ADD|	000000|  
@@ -87,8 +87,8 @@ R- type, I-type and Jump-type (not included)
 	
 2. I-type
 	
-		|31-26|	25-21|	20-16|	15-0|
-		|OPCODE|	Source Register –1|	Destination Register|	16 bit immediate Data|
+		|31-26|	25-21| 20-16| 15-0|
+		|OPCODE| Source Register–1| Destination Register| 16 bit immediate Data|
 		
 |LW	|001000|
 |SW	|001001|
