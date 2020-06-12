@@ -1,6 +1,6 @@
-# RISC V MIPS32 Microprocessor
+# RISC MIPS32 Microprocessor Design Using Verilog HDL
 
-Verilog, 5 stage pipelined design for a simple 32-bit Reduced Instruction Set Chip (RISC) ISA microprocessor MIPS32 (Microprocessor without Interlocked Pipelined Stages). 
+5 stage pipelined design for a simple 32-bit Reduced Instruction Set Chip (RISC) ISA microprocessor MIPS32 (Microprocessor without Interlocked Pipelined Stages). 
 
 32 bit Program Counter, NO flag registers, very few addressing modes and assuming memory word size is 32 bits.
 
