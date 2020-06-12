@@ -13,37 +13,47 @@ Verilog, 5 stage pipelined design for a simple 32-bit Reduced Instruction Set Ch
 
 Load and Store Instructions:
 
-LW  R2, 124(R8)      //R2 = Mem[R8+124]
-SW R5, -10(R42)     //Mem[R42-10] = R5
+LW  R2, 124(R8)      &nbsp;//R2 = Mem[R8+124]
+SW R5, -10(R42)      &nbsp;//Mem[R42-10] = R5
 
 
 Arithmetic and Logic Functions on Register Operands: 
 
-ADD R1, R2, R3    //R1 = R2+R3
-ADD R1, R2, R0    //R1 = R2+0
-SUB R1, R2, R3    //R1 = R2-R3
-AND R1, R2, R3    //R1 = R2 & R3
-OR R1, R2, R3    //R1 = R2 | R3
-MUL R1, R2, R3    //R1 = R2*R3
-SLT R1, R2, R3    //IF R2 < R3, R1 = 1 ; else R1 = 0
+ADD R1, R2, R3    &nbsp;//R1 = R2+R3
+
+ADD R1, R2, R0    &nbsp;//R1 = R2+0
+
+SUB R1, R2, R3    &nbsp;//R1 = R2-R3
+
+AND R1, R2, R3    &nbsp;//R1 = R2 & R3
+
+OR R1, R2, R3     &nbsp;//R1 = R2 | R3
+
+MUL R1, R2, R3    &nbsp;//R1 = R2*R3
+
+SLT R1, R2, R3    &nbsp;//IF R2 < R3, R1 = 1 ; else R1 = 0
 
 
 Arithmetic and Logic Functions on Immediate Operands: 
 
-ADDI R1, R2, 34    //R1 = R2 + 34
-SUBI R1, R2, 42    //R1 = R2 - 42
-SLTI R1, R2, 16    // IF R2 < 16, R1 = 1; else R1 = 0
+ADDI R1, R2, 34    &nbsp;//R1 = R2 + 34
+
+SUBI R1, R2, 42    &nbsp;//R1 = R2 - 42
+
+SLTI R1, R2, 16    &nbsp;// IF R2 < 16, R1 = 1; else R1 = 0
 
 
 Branch Instructions:
 
-BEQZ R1, LOOP    //Branch to LOOP if R1 == 0
-BNEQZ R2, LOOP //Branch to LOOP if R2 != 0
+	BEQZ R1, LOOP    &nbsp;//Branch to LOOP if R1 == 0
+
+	BNEQZ R2, LOOP   &nbsp;//Branch to LOOP if R2 != 0
 
 Jump Instructions have not been added.
 
 Miscellaneous Instruction
-	HLT    //HALT execution
+	
+	HLT    &nbsp;//HALT execution
 
 
 # INSTRUCTION ENCODING
