@@ -13,34 +13,34 @@ Verilog, 5 stage pipelined design for a simple 32-bit Reduced Instruction Set Ch
 
 Load and Store Instructions:
 
-LW  R2, 124(R8)      &nbsp;//R2 = Mem[R8+124]
-SW R5, -10(R42)      &nbsp;//Mem[R42-10] = R5
+	LW  R2, 124(R8)      &nbsp;//R2 = Mem[R8+124]
+	SW R5, -10(R42)      &nbsp;//Mem[R42-10] = R5
 
 
 Arithmetic and Logic Functions on Register Operands: 
 
-ADD R1, R2, R3    &nbsp;//R1 = R2+R3
+	ADD R1, R2, R3    &nbsp;//R1 = R2+R3
 
-ADD R1, R2, R0    &nbsp;//R1 = R2+0
+	ADD R1, R2, R0    &nbsp;//R1 = R2+0
 
-SUB R1, R2, R3    &nbsp;//R1 = R2-R3
+	SUB R1, R2, R3    &nbsp;//R1 = R2-R3
 
-AND R1, R2, R3    &nbsp;//R1 = R2 & R3
+	AND R1, R2, R3    &nbsp;//R1 = R2 & R3
 
-OR R1, R2, R3     &nbsp;//R1 = R2 | R3
+	OR R1, R2, R3     &nbsp;//R1 = R2 | R3
 
-MUL R1, R2, R3    &nbsp;//R1 = R2*R3
+	MUL R1, R2, R3    &nbsp;//R1 = R2*R3
 
-SLT R1, R2, R3    &nbsp;//IF R2 < R3, R1 = 1 ; else R1 = 0
+	SLT R1, R2, R3    &nbsp;//IF R2 < R3, R1 = 1 ; else R1 = 0
 
-
+	
 Arithmetic and Logic Functions on Immediate Operands: 
 
-ADDI R1, R2, 34    &nbsp;//R1 = R2 + 34
+	ADDI R1, R2, 34    &nbsp;//R1 = R2 + 34
 
-SUBI R1, R2, 42    &nbsp;//R1 = R2 - 42
+	SUBI R1, R2, 42    &nbsp;//R1 = R2 - 42
 
-SLTI R1, R2, 16    &nbsp;// IF R2 < 16, R1 = 1; else R1 = 0
+	SLTI R1, R2, 16    &nbsp;// IF R2 < 16, R1 = 1; else R1 = 0
 
 
 Branch Instructions:
@@ -64,7 +64,8 @@ R- type, I-type and Jump-type (not included)
 
 1. R-type
 		
-		|31-26 |	25-21|	20-16|	15-11|	11-0|
+		|31-26 |	25-21 |	20-16 |	15-11 |	11-0|
+		| --- |  --- | --- | --- | --- |
 		|OPCODE|	SOURCE Register 1|	SOURCE Register 2|	Destination Register|<empty>|                         
 	
 	                                                                                   
