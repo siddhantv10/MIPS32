@@ -4,6 +4,8 @@
 
 32 bit Program Counter, NO flag registers, very few addressing modes and assuming memory word size is 32 bits.
 
+No steps were taken to avoid any kind of hazards in the design of the microprocessor. Instead dummy instructions were included in between the required instructions to avoid hazards during the running of programs.
+
 
 # Registers
 
