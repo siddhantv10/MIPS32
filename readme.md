@@ -14,6 +14,7 @@
 Load and Store Instructions:
 
 	LW  R2, 124(R8)      //R2 = Mem[R8+124]
+	
 	SW R5, -10(R42)      //Mem[R42-10] = R5
 
 
@@ -36,11 +37,11 @@ Arithmetic and Logic Functions on Register Operands:
 	
 Arithmetic and Logic Functions on Immediate Operands: 
 
-	ADDI R1, R2, 34    &nbsp;//R1 = R2 + 34
+	ADDI R1, R2, 34    //R1 = R2 + 34
 
-	SUBI R1, R2, 42    &nbsp;//R1 = R2 - 42
+	SUBI R1, R2, 42    //R1 = R2 - 42
 
-	SLTI R1, R2, 16    &nbsp;// IF R2 < 16, R1 = 1; else R1 = 0
+	SLTI R1, R2, 16    // IF R2 < 16, R1 = 1; else R1 = 0
 
 
 Branch Instructions:
@@ -67,9 +68,10 @@ R- type, I-type and Jump-type (not included)
 		
 	|31-26 | 25-21 |20-16 |	15-11 |	11-0|
 	| --- | --- | --- | --- | --- |
-	|OPCODE| SOURCE Register 1| SOURCE Register 2| Destination Register | <empty>|                         
+	|OPCODE| SOURCE Register 1| SOURCE Register 2| Destination Register | -empty-|                         
 	
 	
+	<div align = "center">
 	| Instruction | Code|
 	| --- |---|
 	| ADD | 000000 |  
@@ -79,13 +81,12 @@ R- type, I-type and Jump-type (not included)
 	| SLT | 000100 |
 	| MUL | 000101 |
 	| HLT | 111111 |
-  
+  	</div>
 --> SUB R5, R12, R25
 		
 |000001|01100|11001|00101|00000000000|
 |---|---|---|---|---|
-|SUB|R12|R25|R5|<empty>|
-		
+|SUB|R12|R25|R5|empty|
 which is 05992800 in hexadecimal
 		
 	
@@ -96,6 +97,7 @@ which is 05992800 in hexadecimal
 	|---|---|---|---|
 	|OPCODE| Source Register–1| Destination Register| 16 bit immediate Data|
 
+<div align = "center">
 |Instruction|Code|
 |---|---|
 |LW|001000|
@@ -105,13 +107,13 @@ which is 05992800 in hexadecimal
 |SLTI|001100|
 |BNEQZ|	001101|
 |BEQZ|	001110|
+</div>
 
 --> LW R20, 84(R9)
 	
 |001000	|01001	|10100	|0000000001010100|
 |---|---|---|---|
 |LW	|R9	|R20	|Offset|
-		
 which is 21340054 in hexadecimal
 		
 --> BEQZ R25, Label
