@@ -72,6 +72,7 @@ R- type, I-type and Jump-type (not included)
 	
 	
 	<div align = "center">
+	
 	| Instruction | Code|
 	| --- |---|
 	| ADD | 000000 |  
@@ -81,6 +82,7 @@ R- type, I-type and Jump-type (not included)
 	| SLT | 000100 |
 	| MUL | 000101 |
 	| HLT | 111111 |
+	
   	</div>
 --> SUB R5, R12, R25
 		
@@ -98,6 +100,7 @@ which is 05992800 in hexadecimal
 	|OPCODE| Source Register–1| Destination Register| 16 bit immediate Data|
 
 <div align = "center">
+	
 |Instruction|Code|
 |---|---|
 |LW|001000|
@@ -107,6 +110,7 @@ which is 05992800 in hexadecimal
 |SLTI|001100|
 |BNEQZ|	001101|
 |BEQZ|	001110|
+
 </div>
 
 --> LW R20, 84(R9)
