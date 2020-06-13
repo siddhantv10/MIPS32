@@ -89,7 +89,7 @@ R- type, I-type and Jump-type (not included)
 |000001|01100|11001|00101|00000000000|
 |---|---|---|---|---|
 |SUB|R12|R25|R5|empty|
-which is 05992800 in hexadecimal
+
 		
 	
 	
@@ -118,7 +118,7 @@ which is 05992800 in hexadecimal
 |001000	|01001	|10100	|0000000001010100|
 |---|---|---|---|
 |LW	|R9	|R20	|Offset|
-which is 21340054 in hexadecimal
+
 		
 --> BEQZ R25, Label
 
