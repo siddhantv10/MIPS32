@@ -95,12 +95,14 @@ R- type, I-type and Jump-type (not included)
 <br />		
 	
 	
-2. I-type
-	
+ 2. I-type
+ 
+ <br />
 	|31-26|	25-21| 20-16| 15-0|
 	|---|---|---|---|
 	|OPCODE| Source Register–1| Destination Register| 16 bit immediate Data|
 
+<br />
 
 |Instruction|Code|
 |---|---|
@@ -113,6 +115,7 @@ R- type, I-type and Jump-type (not included)
 |BEQZ|	001110|
 
 
+<br />
 
 --> LW R20, 84(R9)
 	
@@ -120,7 +123,8 @@ R- type, I-type and Jump-type (not included)
 |---|---|---|---|
 |LW	|R9	|R20	|Offset|
 
-		
+<br />
+
 --> BEQZ R25, Label
 
 |001110|11001|00000|YYYYYYYYYYYYYYYY|
@@ -128,6 +132,8 @@ R- type, I-type and Jump-type (not included)
 |BEQZ|R25|Unused|Offset|
 		
 --> HERE Offset = Number of Instructions we Need to go back +1
+
+<br />
 		
 # INSTRUCTION CYCLE
 
