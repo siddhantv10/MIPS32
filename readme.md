@@ -130,7 +130,7 @@ R- type, I-type and Jump-type (not included)
 		
 # INSTRUCTION CYCLE
 
-We divide the instrcution cycle into 5 steps:
+We divide the instruction cycle into 5 steps:
 	 
    1. IF: Instruction Fetch : Here the instruction pointed to by the PC is fetched from the memory and also the next value of PC is computed.
 	For the branch instruction, the new value of PC may be the target address. So PC is not updated in this stage; the new value is stored in a register NPC.
