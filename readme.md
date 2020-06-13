@@ -98,6 +98,7 @@ R- type, I-type and Jump-type (not included)
  2. I-type
  
  <br />
+ 
 	|31-26|	25-21| 20-16| 15-0|
 	|---|---|---|---|
 	|OPCODE| Source Register–1| Destination Register| 16 bit immediate Data|
