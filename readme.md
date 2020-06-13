@@ -72,7 +72,7 @@ R- type, I-type and Jump-type (not included)
 	| --- | --- | --- | --- | --- |
 	|OPCODE| SOURCE Register 1| SOURCE Register 2| Destination Register | -empty-|                         
 	
-	
+	<br />
 	
 	| Instruction | Code|
 	| --- |---|
@@ -84,14 +84,15 @@ R- type, I-type and Jump-type (not included)
 	| MUL | 000101 |
 	| HLT | 111111 |
 	
-  	
+  	<br />
+	
 --> SUB R5, R12, R25
 		
 |000001|01100|11001|00101|00000000000|
 |---|---|---|---|---|
 |SUB|R12|R25|R5|empty|
 
-		
+<br />		
 	
 	
 2. I-type
