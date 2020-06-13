@@ -73,7 +73,6 @@ R- type, I-type and Jump-type (not included)
 	|OPCODE| SOURCE Register 1| SOURCE Register 2| Destination Register | -empty-|                         
 	
 	
-	<div align = "center">
 	
 	| Instruction | Code|
 	| --- |---|
@@ -85,7 +84,7 @@ R- type, I-type and Jump-type (not included)
 	| MUL | 000101 |
 	| HLT | 111111 |
 	
-  	</div>
+  	
 --> SUB R5, R12, R25
 		
 |000001|01100|11001|00101|00000000000|
@@ -101,8 +100,7 @@ R- type, I-type and Jump-type (not included)
 	|---|---|---|---|
 	|OPCODE| Source Register–1| Destination Register| 16 bit immediate Data|
 
-<div align = "center">
-	
+
 |Instruction|Code|
 |---|---|
 |LW|001000|
@@ -113,7 +111,7 @@ R- type, I-type and Jump-type (not included)
 |BNEQZ|	001101|
 |BEQZ|	001110|
 
-</div>
+
 
 --> LW R20, 84(R9)
 	
